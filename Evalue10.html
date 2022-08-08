@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of even and odd numbers</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var numbers=[1,2,3,4,5,6,7,8,9,10,11,12];
+            var sum_e=0;
+            var sum_o=0;
+            for(const value of numbers){
+                if(value%2==0){
+                    sum_e+=value;
+                }
+                else{
+                    sum_o+=value;
+                }
+            }
+            console.log("The sum of even numbers in the array= "+sum_e);
+            console.log("The sum of odd numbers in the array= "+sum_o);
+        </script>
+    </body>
+</html>
