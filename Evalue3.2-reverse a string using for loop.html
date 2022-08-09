@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Reverse a string in javascript
+    </title>
+</head>
+
+<body>
+    <script>
+        let char = prompt("Enter the string");
+        if (isNaN(char)) {
+            function reverseString(str) {
+                var newString = "";
+                for (var i = str.length - 1; i >= 0; i--) {
+                    newString += str[i];
+                }
+                return newString;
+            }
+        }
+        else {
+            console.log("Enter only string");
+        }
+        console.log(reverseString(char));
+    </script>
+</body>
+
+</html>
