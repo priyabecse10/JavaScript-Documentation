@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Random number between 1 and 5
+    </title>
+</head>
+
+<body>
+    <script>
+        let min = parseInt(prompt("Enter the min value"));
+        let max = parseInt(prompt("Enter the max value"));
+        let rand = Math.floor(Math.random() * (max - min + 1)) + min;
+        console.log(`Random value between ${min} and ${max} is ${rand}`);
+    </script>
+</body>
+
+</html>
