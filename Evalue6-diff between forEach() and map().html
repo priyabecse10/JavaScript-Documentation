@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Diff between forEach() and map()
+        </title>
+    </head>
+
+<body>
+
+    <script>
+        let tot = 0;
+        const numbers = [65, 44, 12, 4];
+        // using map() method
+        const newArr = numbers.map(myFunction);
+
+        function myFunction(num) {
+            return tot = tot + num;
+        }
+        console.log("the new array is " + newArr);
+        //using forEach() method
+        numbers.forEach(myFunction => console.log(tot));
+    </script>
+
+</body>
+
+</html>
