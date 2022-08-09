@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>removing duplicates from an array of objects</title>
+</head>
+
+<body>
+    <script>
+        const arr = [
+            { id: 1, name: 'Stephen covey' },
+            { id: 2, name: 'Robin Sharma' },
+            { id: 3, name: 'Tolstoy' },
+            { id: 3, name: 'Tolstoy' },
+            { id: 5, name: 'James clear' }
+        ];
+
+        const uniqueIds = [];
+
+        const unique = arr.filter(element => {
+            const isDuplicate = uniqueIds.includes(element.id);
+
+            if (!isDuplicate) {
+                uniqueIds.push(element.id);
+                return true;
+            }
+
+            return false;
+        });
+
+        console.log(unique);
+    </script>
+</body>
+
+</html>
